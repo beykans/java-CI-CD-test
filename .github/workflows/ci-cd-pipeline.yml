@@ -21,13 +21,12 @@ jobs:
          java-version: '17'
          distribution: 'temurin'
          cache: maven
-    - name: get the current path
-      run: pwd
-    - name: set initial path for building maven
-      run: cd main\math-operations
+
     - name: Build with Maven
+      working-directory: /main/math-operations
       run: mvn clean install
     - name: Run tests
+      working-directory: /main/math-operations
       run: mvn test
       
   job2:
