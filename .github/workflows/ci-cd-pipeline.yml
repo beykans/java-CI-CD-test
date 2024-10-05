@@ -22,7 +22,7 @@ jobs:
          distribution: 'temurin'
          cache: maven
     - name: set initial path for building maven
-      run: cd github-workflow\main\math-operations
+      run: cd C:\Users\acer\github-workflow\main\math-operations
     - name: Build with Maven
       run: mvn clean install
     - name: Run tests
