@@ -24,7 +24,7 @@ jobs:
     - name: get the current path
       run: pwd
     - name: set initial path for building maven
-      run: cd C:\Users\acer\github-workflow\main\math-operations
+      run: cd main\math-operations
     - name: Build with Maven
       run: mvn clean install
     - name: Run tests
